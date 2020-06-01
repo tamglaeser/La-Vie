@@ -1,9 +1,15 @@
+# Vim backups
 *~
+
+# Rust & wasm-pack
 target/
 **/*.rs.bk
 Cargo.lock
-bin/
 pkg/
-wasm-pack.log
+
+# Node.js
 node_modules
 package-lock.json
+
+# CLion
+.idea
