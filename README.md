@@ -41,7 +41,7 @@ $ tree -L 3 .
 ```
 
 #### Building the project
-Execute the following command to build the core crate.
+Execute the following command to build the crate.
 ```
 $ wasm-pack build
 ```
