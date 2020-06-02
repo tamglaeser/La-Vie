@@ -1,21 +1,21 @@
-##_Conway's Game of Life_ in Rust and WebAssembly
+## _Conway's Game of Life_ in Rust and WebAssembly
 This project is based on the tutorial from the Rust🦀 and WebAssembly🕸 [book](https://rustwasm.github.io/docs/book/), realizing _Conway's Game of Life_.
 
-##Getting Started
+## Getting Started
 
-####Prerequisites
+#### Prerequisites
 This project requires the standard Rust toolchain (`rustup`, `rustc`, and `cargo`). If you do not have it or have an older version than
 Rust 1.30, follow this [link](https://www.rust-lang.org/tools/install) to install it now.
 
 Furthermore, you will also need [`wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/) and 
 [`npm`](https://www.npmjs.com/get-npm).
   
-####Get the Sources
+#### Get the Sources
 ```
 $ git clone https://github.com/tamglaeser/La-Vie.git
 $ cd ./La-Vie
 ```
-####Project Structure
+#### Project Structure
 
 ```
 $ tree -L 3 .
@@ -38,7 +38,7 @@ $ tree -L 3 .
     └── webpack.config.js     
 ```
 
-####Building the project
+#### Building the project
 Execute the following command to build the core crate.
 ```
 $ wasm-pack build
