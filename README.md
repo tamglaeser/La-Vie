@@ -1,59 +1,53 @@
-  <h2><i>Conway's Game of Life</i> in Rust and WebAssembly</h1>
+##_Conway's Game of Life_ in Rust and WebAssembly
+This project is based on the tutorial from the Rust🦀 and WebAssembly🕸 [book](https://rustwasm.github.io/docs/book/), realizing _Conway's Game of Life_.
 
-  <p>This project is based on the tutorial from the Rust🦀 and WebAssembly🕸 <a href="https://rustwasm.github.io/docs/book/">book</a>, realizing <i>Conway's Game of Life</i>. 
+##Getting Started
+
+####Prerequisites
+This project requires the standard Rust toolchain (`rustup`, `rustc`, and `cargo`). If you do not have it or have an older version than
+Rust 1.30, follow this [link](https://www.rust-lang.org/tools/install) to install it now.
+
+Furthermore, you will also need [`wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/) and 
+[`npm`](https://www.npmjs.com/get-npm).
   
-  <h3>Getting Started</h3>
-  <h4>Prerequisites</h4>
-  <p>This project requires the standard Rust toolchain (<code>rustup</code>, <code>rustc</code>, and <code>cargo</code>). If you do not have it or have an older version than
-   Rust 1.30, follow this <a href="https://www.rust-lang.org/tools/install">link</a> to install it now.
-   
-   Furthermore, you will also need <code><a href="https://rustwasm.github.io/wasm-pack/installer/">wasm-pack</a></code> and 
-   <code><a href="https://www.npmjs.com/get-npm">npm</a></code>.
-  
-  <h4>Get the Sources</h4>
-  
-  
-  ```
-  $ git clone https://github.com/tamglaeser/La-Vie.git
-  $ cd ./la-vie
-  ```
-  
-  <h4>Project Structure</h4>
-     
-   ```
-     /La-Vie$ tree -L 3 .
-      .
-      ├── Cargo.toml
-      ├── LICENSE_APACHE
-      ├── LICENSE_MIT
-      ├── README.md
-      ├── src
-      │   ├── lib.rs
-      │   └── utils.rs
-      ├── tests
-      │   └── web.rs
-      └── www
-          ├── bootstrap.js
-          ├── index.html
-          ├── index.js
-          ├── package.json
-          ├── README.md
-          └── webpack.config.js     
-   ```
-   
-  
-  
-  <h4>Building the project</h4>
-  <p>Execute the following command in the root folder, <i>la-vie</i>, of the terminal to build the core crate.</p>
-  
-  ```
-  $ wasm-pack build
-  ```
-  <p>Next, run the following commands in the <i>www/</i> subfolder of <i>la-vie</i> to install the dependencies and run the server, repsectively.</p>
-  
-  ```
-  $ npm install
-  $ npm run start
-  ```
-  <p>Assuming the client and server are on the same machine, navigate to http://localhost:8080/ on your Web browser and you should be able to see
-   the evolution of life!</p>
+####Get the Sources
+```
+$ git clone https://github.com/tamglaeser/La-Vie.git
+$ cd ./La-Vie
+```
+####Project Structure
+
+```
+$ tree -L 3 .
+.
+├── Cargo.toml
+├── LICENSE_APACHE
+├── LICENSE_MIT
+├── README.md
+├── src
+│   ├── lib.rs
+│   └── utils.rs
+├── tests
+│   └── web.rs
+└── www
+    ├── bootstrap.js
+    ├── index.html
+    ├── index.js
+    ├── package.json
+    ├── README.md
+    └── webpack.config.js     
+```
+
+####Building the project
+Execute the following command to build the core crate.
+```
+$ wasm-pack build
+```
+Next, run the following commands to install the Node.js dependencies and run the server.
+```
+$ cd ./www
+$ npm install
+$ npm run start
+```
+Assuming the client and server are on the same machine, navigate to http://localhost:8080/ on your Web browser and you should be able to see
+the evolution of life!
