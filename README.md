@@ -1,6 +1,8 @@
 ## _Conway's Game of Life_ in Rust and WebAssembly
 This project is based on the tutorial from the Rust🦀 and WebAssembly🕸 [book](https://rustwasm.github.io/docs/book/), realizing _Conway's Game of Life_.
 
+[![Build Status](https://travis-ci.org/tamglaeser/La-Vie.svg?branch=master)](https://travis-ci.org/tamglaeser/La-Vie)
+
 ## Getting Started
 
 #### Prerequisites
