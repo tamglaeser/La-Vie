@@ -1,5 +1,3 @@
-<div align="center">
-
   <h2><i>Conway's Game of Life</i> in Rust and WebAssembly</h1>
 
   <p>This project is based on the tutorial from the Rust🦀 and WebAssembly🕸 <a href="https://rustwasm.github.io/docs/book/">book</a>, realizing <i>Conway's Game of Life</i>. 
