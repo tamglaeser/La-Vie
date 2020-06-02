@@ -37,6 +37,7 @@
    the evolution of life!</p>
    
    <h4>Project Structure</h4>
+   
    ```
    /La-Vie$ tree -L 3 .
     .
@@ -55,5 +56,5 @@
         ├── index.js
         ├── package.json
         ├── README.md
-        └── webpack.config.js
-    ```
+        └── webpack.config.js     
+```
